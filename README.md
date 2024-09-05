@@ -2,6 +2,14 @@
 
 # General Questions
 
+## Useful links
+
+### Free resource for practicing Python
+
+[Python Exercises](https://pynative.com/python-exercises-with-solutions/)
+
+[W3Schools](https://www.w3schools.com/python/default.asp)
+
 ## About the dataframe variables in Jupyter Notebooks
 
 ```mermaid
