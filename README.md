@@ -64,7 +64,10 @@ print("="*20, " Method 3", "="*20)
 for i, name in enumerate(names):
     print(i, name)
     
-    
+```
+## If statement
+
+![img](./img/pic01.png)
     
 if num <= 4:
     print("A")
@@ -77,4 +80,4 @@ elif (num > 7) & (num <= 8):
 else:
     print("Else")
 
-```
+
