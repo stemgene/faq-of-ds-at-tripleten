@@ -68,7 +68,8 @@ for i, name in enumerate(names):
 ## If statement
 
 ![img](./img/pic01.png)
-    
+
+```python
 if num <= 4:
     print("A")
 elif (num > 4) & (num <= 6):
@@ -79,5 +80,5 @@ elif (num > 7) & (num <= 8):
     print("D")
 else:
     print("Else")
-
+```
 
