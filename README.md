@@ -84,4 +84,18 @@ elif (num > 7) & (num <= 8):
 else:
     print("Else")
 ```
+## List comprehension
 
+```python
+print("="*20, " List Comprehension", "="*20)
+nums = []
+for i in range(10):
+    nums.append(i)
+print(nums)
+
+nums = [i*2 for i in range(10)] # [item for-loop]
+print(nums)
+
+nums = [i*2 for i in range(10) if i%2==1] # [item for-loop if]
+print(nums)
+```
