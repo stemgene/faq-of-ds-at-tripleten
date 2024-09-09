@@ -10,6 +10,8 @@
 
 [W3Schools](https://www.w3schools.com/python/default.asp)
 
+[mimo](https://mimo.org/)
+
 ## About the dataframe variables in Jupyter Notebooks
 
 ```mermaid
