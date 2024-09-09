@@ -10,7 +10,9 @@
 
 [W3Schools](https://www.w3schools.com/python/default.asp)
 
-[mimo](https://mimo.org/)
+[mimo](https://mimo.org/): Duolingo of Python
+
+[Practice Pandas](https://www.geeksforgeeks.org/pandas-practice-excercises-questions-and-solutions/)
 
 ## About the dataframe variables in Jupyter Notebooks
 
