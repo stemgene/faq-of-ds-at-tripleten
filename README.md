@@ -4,9 +4,9 @@
 
 ## Useful links
 
-### Free resource for practicing Python
-
 [roadmap](https://roadmap.sh/ai-data-scientist)
+
+### Free resource for practicing Python
 
 [Python Exercises](https://pynative.com/python-exercises-with-solutions/)
 
