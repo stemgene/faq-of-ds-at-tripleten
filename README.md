@@ -6,6 +6,8 @@
 
 ### Free resource for practicing Python
 
+[roadmap](https://roadmap.sh/ai-data-scientist)
+
 [Python Exercises](https://pynative.com/python-exercises-with-solutions/)
 
 [W3Schools](https://www.w3schools.com/python/default.asp)
