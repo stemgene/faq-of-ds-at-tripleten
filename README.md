@@ -16,6 +16,8 @@
 
 [Practice Pandas](https://www.geeksforgeeks.org/pandas-practice-excercises-questions-and-solutions/)
 
+[Pandas cheatsheet]()
+
 ## About the dataframe variables in Jupyter Notebooks
 
 ```mermaid
