@@ -8,9 +8,9 @@
 
 ### Free resource for practicing Python
 
-[Python Exercises](https://pynative.com/python-exercises-with-solutions/)
-
 [W3Schools](https://www.w3schools.com/python/default.asp)
+
+[Python Exercises](https://pynative.com/python-exercises-with-solutions/)
 
 [mimo](https://mimo.org/): Duolingo of Python
 
