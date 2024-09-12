@@ -42,9 +42,9 @@ graph TD
 # Sprint 0 & 1
 
 ## For loop
-
+<html>
 <script src="https://gist.github.com/stemgene/83349a0f6ef230b9a779db468456d447.js"></script>
-
+</html>
 
 ```python
 names = ['Adam', 'Bob', 'David', 'Harry']
