@@ -16,7 +16,7 @@
 
 [Practice Pandas](https://www.geeksforgeeks.org/pandas-practice-excercises-questions-and-solutions/)
 
-[Pandas cheatsheet]()
+[Pandas cheatsheet](https://github.com/stemgene/faq-of-ds-at-tripleten/blob/main/pandas-cheat-sheet.md)
 
 ## About the dataframe variables in Jupyter Notebooks
 
