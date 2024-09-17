@@ -107,3 +107,7 @@ print(nums)
 nums = [i*2 for i in range(10) if i%2==1] # [item for-loop if]
 print(nums)
 ```
+
+# Sprint 3
+
+[To explain merging tables](https://docs.google.com/spreadsheets/d/13slsNh26uWZKVMHSMuPZCjIvKleY1I9JMuvvuwwb_o4/edit?gid=0#gid=0) 
