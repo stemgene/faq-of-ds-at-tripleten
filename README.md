@@ -39,6 +39,16 @@ graph TD
 
 ```
 
+## Multiple path
+
+```python
+try:
+    products = pd.read_csv("C:/....") # opt 1
+except FileNotFoundError :
+    products = pd.read_csv("/datasets/products.csv", sep=";") # opt 2
+    
+```
+
 # Sprint 0 & 1
 
 ## For loop
