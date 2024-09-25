@@ -121,3 +121,10 @@ print(nums)
 # Sprint 3
 
 [To explain merging tables](https://docs.google.com/spreadsheets/d/13slsNh26uWZKVMHSMuPZCjIvKleY1I9JMuvvuwwb_o4/edit?gid=0#gid=0) 
+
+
+# Sprint 4
+
+```
+altair==4.2.0
+```
