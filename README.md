@@ -128,3 +128,7 @@ print(nums)
 ```
 altair==4.2.0
 ```
+
+# Sprint 6
+
+[how to build a database on VSCode](https://www.youtube.com/watch?v=cc-cSSsGqbA)
