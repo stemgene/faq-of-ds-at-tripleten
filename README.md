@@ -132,3 +132,47 @@ altair==4.2.0
 # Sprint 6
 
 [how to build a database on VSCode](https://www.youtube.com/watch?v=cc-cSSsGqbA)
+
+# Sprint 8
+
+Machine Learning Process
+```python
+X_train, y_train, X_val, y_val, X_test, y_test -> check if they are the same distribution
+# 1. Training session
+
+# 1st round
+model
+model.fit(X_train, y_train)
+prediction = model.predict(X_val)
+metric_1st = f1(y_val, prediction)  # metric_1st is good enough?
+
+# 2. fine tuning session
+
+# 2nd round handle unbanlanced data
+X_train = upsample(X_train)
+model.fit(X_train, y_train)
+prediction = model.predict(X_val)
+metric_2nd = f1(y_val, prediction)  # metric_2nd is good enough? 
+
+# 3rd round fine tuning the model
+best_params = gridsearch()
+model = rh(best_params)
+model.fit(X_train, y_train)
+prediction = model.predict(X_val)
+metric_2nd = f1(y_val, prediction)  # metric_3rd is good enough? 
+
+# 4th and further fine tuning loop
+# if metric is good:
+#     finish
+# else:
+#     4th round
+    # feature engineering (generate new columns, drop columns)
+    # new models (LightGBM, XGBoost, CatBoost)
+    # Bayes optimization method
+
+# 3. test session
+# Once We've a good result on validation set
+
+prediction = model.predict(X_test)
+final_metric = f1(y_test, prediction)
+```
