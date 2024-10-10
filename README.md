@@ -136,6 +136,9 @@ altair==4.2.0
 # Sprint 8
 
 Machine Learning Process
+
+![Predict Workflow](img/predict_workflow.png)
+
 ```python
 X_train, y_train, X_val, y_val, X_test, y_test -> check if they are the same distribution
 # 1. Training session
