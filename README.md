@@ -135,6 +135,10 @@ altair==4.2.0
 
 # Sprint 8
 
+Split dataset
+![split dataset](/img/split_dataset.png)
+
+
 Machine Learning Process
 
 ```python
