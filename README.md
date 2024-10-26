@@ -137,7 +137,22 @@ altair==4.2.0
 
 Machine Learning Process
 
-![Predict Workflow](img/predict_workflow.png)
+```python
+features_train, label_train, features_test, label_test
+
+model = decisiontree(max_depth=3)
+model.fit(features_train, label_train)
+prediction = model.predict(features_test)
+accuracy = metric(label_test, prediction)
+# 1st trial
+accuracy = 0.6
+# 2nd trail
+accuracy = 0.65
+# 3rd trail
+accuracy = 0.7
+...
+```python
+
 
 ```python
 X_train, y_train, X_val, y_val, X_test, y_test -> check if they are the same distribution
