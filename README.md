@@ -198,3 +198,29 @@ metric_2nd = f1(y_val, prediction)  # metric_3rd is good enough?
 prediction = model.predict(X_test)
 final_metric = f1(y_test, prediction)
 ```
+
+# Sprint 9
+
+Calculate profit for 1 region:
+
+```python
+state = np.random.RandomState(42)
+pred_target_region0 = pred_target_dfs[0]
+# print(pred_target_region0)  # (25000, 2) y_pred target
+pred = pred_target_region0['y_pred']
+target = pred_target_region0['target']
+
+# bootstrap
+values = []
+for i in range(1000):
+    target_subsample = target.sample(n=500, replace=True, random_state=state)
+    pred_subsample = pred[target_subsample.index]
+    
+    # calculate profit
+    # sort 
+    pred_sorted = pred_subsample.sort_values(ascending=False)
+    # get top 200 samples
+    selected = target_subsample[pred_sorted.index][:200]
+    profit = UNIT_REVENUE * selected.sum() - BUDGET
+    values.append(profit)
+```
