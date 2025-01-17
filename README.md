@@ -219,12 +219,13 @@ values = []
 for i in range(1000):
     target_subsample = target.sample(n=500, replace=True, random_state=state)
     pred_subsample = pred[target_subsample.index]
+    # print(target_subsample, pred_subsample) # the values should be 30s ~ 160s
     
     # calculate profit
     # sort 
     pred_sorted = pred_subsample.sort_values(ascending=False)
     # get top 200 samples
-    selected = target_subsample[pred_sorted.index][:200]
-    profit = UNIT_REVENUE * selected.sum() - BUDGET
+    selected = target_subsample[pred_sorted.index][:200] # selected: 160s, 150s...
+    profit = UNIT_REVENUE * selected.sum() - BUDGET # selected.sum(): around 25000... 
     values.append(profit)
 ```
