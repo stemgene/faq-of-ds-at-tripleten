@@ -229,3 +229,29 @@ for i in range(1000):
     profit = UNIT_REVENUE * selected.sum() - BUDGET # selected.sum(): around 25000... 
     values.append(profit)
 ```
+
+# Sprint 10
+
+## Introduce the cross validation with the customerized metric function
+
+```python
+def smape_series(y_test, y_pred):
+    y_test = np.array(y_test)
+    y_pred = np.array(y_pred)
+    denominator = (np.abs(y_test) + np.abs(y_pred)) 
+    nonzero_indices = denominator != 0
+    smape_value = np.mean(np.abs(y_test[nonzero_indices] - y_pred[nonzero_indices]) / denominator[nonzero_indices])
+    return smape_value
+
+def smape_individual(y_test, y_pred):
+    y_test = np.array(y_test)
+    y_pred = np.array(y_pred)
+    result = 0
+    for i in range(len(y_test)):
+        result += abs(y_test[i] - y_pred[i]) / ((abs(y_test[i]) + abs(y_pred[i]))/2 + 1e-15)
+    result = result / len(y_test)
+    return result
+    
+smape_scorer = make_scorer(smape, greater_is_better=False)
+cross_validate(model, X_train, y_train, scoring=smape_scorer)
+```
