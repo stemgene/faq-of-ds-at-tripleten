@@ -118,6 +118,32 @@ nums = [i*2 for i in range(10) if i%2==1] # [item for-loop if]
 print(nums)
 ```
 
+## function
+
+* Type 1: without return value
+```python
+def my_fun():
+    print("Hello")
+
+my_fun()
+
+def my_fun1(a, b):
+    result = a + b
+    print(result)
+
+# call     
+my_fun1(1, 3)
+```
+
+* Type 2: with return value
+```python
+def my_fun2(a, b):
+    result = a + b
+    return result, a*b
+
+my_result, my_result2 = my_fun2(1, 3)
+```
+
 # Sprint 3
 
 [To explain merging tables](https://docs.google.com/spreadsheets/d/13slsNh26uWZKVMHSMuPZCjIvKleY1I9JMuvvuwwb_o4/edit?gid=0#gid=0) 
