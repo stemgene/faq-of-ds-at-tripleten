@@ -18,6 +18,8 @@
 
 [Pandas cheatsheet](https://github.com/stemgene/faq-of-ds-at-tripleten/blob/main/pandas-cheat-sheet.md)
 
+[Address the missing values](https://pub.towardsai.net/comprehensive-guide-handling-missing-values-in-machine-learning-a-z-crash-course-371be8581f80)
+
 ## About the dataframe variables in Jupyter Notebooks
 
 ```mermaid
