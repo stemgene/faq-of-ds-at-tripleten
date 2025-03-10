@@ -229,6 +229,13 @@ final_metric = f1(y_test, prediction)
 
 ## Issue for installing `imbalanced-learn`
 
+The reason is the running environment is not the same with the one be installed.
+
+```python
+import sys
+print(sys.executable)
+```
+
 `%pip install imbalanced-learn==0.8.0`
 
 # Sprint 9
