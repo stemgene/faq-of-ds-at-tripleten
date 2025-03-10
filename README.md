@@ -229,7 +229,7 @@ final_metric = f1(y_test, prediction)
 
 ## Issue for installing `imbalanced-learn`
 
-`!pip install imbalanced-learn==0.8.0`
+`%pip install imbalanced-learn==0.8.0`
 
 # Sprint 9
 
