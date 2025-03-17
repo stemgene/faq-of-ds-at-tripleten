@@ -10,6 +10,8 @@
 
 [W3Schools](https://www.w3schools.com/python/default.asp)
 
+[Codesignal](https://codesignal.com/learn)
+
 [Python Exercises](https://pynative.com/python-exercises-with-solutions/)
 
 [mimo](https://mimo.org/): Duolingo of Python
