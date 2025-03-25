@@ -171,6 +171,45 @@ Split dataset
 
 Machine Learning Process
 
+
+```mermaid
+graph TD;
+    A[Cleaned Data] --> B[Split to Train, Val, Test];
+    B --> C{Is Data Imbalanced?};  
+    C -->|No| D[Feature Encoding];
+    C -->|Yes| C1[Handle Imbalance:<br> - Upsampling,<br> -SMOTE,<br> -Adust Threshold];
+
+    C1 --> D[Categorical Feature Encoding];
+
+    D --> |Tree-based Models| D1[Use Label Encoding];
+    D -->|Other Models| D2[Use One-Hot Encoding];
+
+
+    D1 --> E[Feature Scaling];
+    D2 --> E[Feature Scaling];
+    E -->|Train Only| E1[Fit Scaler on Train Set];
+    E1 --> E2[Transform Train Set];
+    
+
+    E2 --> F[Hyperparameter Tuning];
+    F --> F1[Grid Search / Random Search];
+    F1 --> F2[Cross Validation];
+    F2 --> G[Train Best Model];
+
+
+    
+    G --> H[Evaluate on Validation Set];
+    H -->|Metrics OK?| I{Validation Score Satisfactory?};
+    I -->|No| F  
+    I -->|Yes| J[Final Model Selection];
+    E1 --> J[Test Model on Test Set];
+    J --> K[Deploy Model & Monitor];
+
+    K -->|Feedback Loop| B;
+
+
+```
+
 ```python
 features_train, label_train, features_test, label_test
 
