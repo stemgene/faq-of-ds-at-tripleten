@@ -174,24 +174,21 @@ Machine Learning Process
 
 ```mermaid
 graph TD;
-    A[Cleaned Data] --> B[Split to Train, Val, Test];
-    B --> C{Is Data Imbalanced?};  
-    C -->|No| D[Feature Encoding];
-    C -->|Yes| C1[Handle Imbalance:<br> - Upsampling,<br> -SMOTE,<br> -Adust Threshold];
+    A[Cleaned Data] --> B[Categorical Feature Encoding];
+    B --> |Tree-based Models| B1[Use Label Encoding];
+    B -->|Other Models| B2[Use One-Hot Encoding];
+    B1 --> C[Split to Train, Val, Test];
+    B2 --> C[Split to Train, Val, Test];
+    C --> D{Is Data Imbalanced?};  
+    D -->|No| E[Numerical Feature Scaling];
+    D -->|Yes| D1[Handle Imbalance:<br> - Upsampling train set,<br> -SMOTE train set,<br> -Adust Threshold];
 
-    C1 --> D[Categorical Feature Encoding];
+    D1 --> E[Numerical Feature Scaling];
 
-    D --> |Tree-based Models| D1[Use Label Encoding];
-    D -->|Other Models| D2[Use One-Hot Encoding];
-
-
-    D1 --> E[Feature Scaling];
-    D2 --> E[Feature Scaling];
-    E -->|Train Only| E1[Fit Scaler on Train Set];
+    E -->|Fit scaler on Train Only| E1[Transform scaler on<br> train and val set seperately];
     E1 --> E2[Transform Train Set];
     
-
-    E2 --> F[Hyperparameter Tuning];
+    E2 --> |Training session| F[Hyperparameter Tuning];
     F --> F1[Grid Search / Random Search];
     F1 --> F2[Cross Validation];
     F2 --> G[Train Best Model];
